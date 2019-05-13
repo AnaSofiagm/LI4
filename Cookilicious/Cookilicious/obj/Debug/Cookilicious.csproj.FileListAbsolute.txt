@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\bin\Debug\Cookilicious.exe.config
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\bin\Debug\Cookilicious.exe
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\bin\Debug\Cookilicious.pdb
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.Properties.Resources.resources
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.exe
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.pdb
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.Begin.resources
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.Interface.Setting1.resources
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.Interface.Setting2.resources
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.Interface.Setting3.resources
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.Interface.AboutUs.resources
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.Interface.Profile.resources
+C:\Users\Asus\Desktop\Cookilicious\Cookilicious\obj\Debug\Cookilicious.Interface.WeeklyPlanner.resources
