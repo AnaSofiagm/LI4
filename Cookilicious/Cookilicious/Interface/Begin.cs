@@ -12,6 +12,7 @@ namespace Cookilicious
 {
     public partial class Begin : Form
     {
+
         public Begin()
         {
             InitializeComponent();
@@ -19,22 +20,28 @@ namespace Cookilicious
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            Interface.SignIn obj = new Interface.SignIn();
+            obj.ShowDialog();
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Interface.Login objUI = new Interface.Login();
+            objUI.ShowDialog();
+            Close(); 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Interface.AboutUs objA = new Interface.AboutUs();
+            objA.ShowDialog();
+            Close();
         }
     }
 }
