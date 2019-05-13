@@ -16,5 +16,11 @@ namespace Cookilicious.Interface
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Interface.AboutUs objA = new Interface.AboutUs();
+            objA.ShowDialog();
+        }
     }
 }

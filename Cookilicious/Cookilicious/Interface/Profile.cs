@@ -26,5 +26,11 @@ namespace Cookilicious.Interface
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Interface.Main objA = new Interface.Main();
+            objA.ShowDialog();
+        }
     }
 }
