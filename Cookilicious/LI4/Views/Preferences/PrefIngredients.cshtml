@@ -1,0 +1,78 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Ingredients";
+
+    <h2>Ingredients</h2>
+    <br />
+
+    <form action="/Preferences/PrefUtensils">
+        <input type="submit" value="Previous"  />
+    </form>
+    <br />
+    <form action="/Main/MainPage">
+        <input type="submit" value="Next" />
+    </form>
+
+    <br />
+    <p> Choose the ingredients you usually have at home</p>
+}
+
+
+<ul role="listbox" tabindex="0" aria-label="email list">
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Sugar
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Flour
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Butter
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Chocolate
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Vanilla
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Berries
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Eggs
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Milk
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Oil
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Cream Cheese
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Baking Soda
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Baking Powder
+    </li>
+</ul>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

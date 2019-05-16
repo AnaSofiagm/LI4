@@ -13,5 +13,15 @@ namespace LI4.Controllers
         {
             return View();
         }
+
+        public ActionResult PrefUtensils()
+        {
+            return View();
+        }
+
+        public ActionResult PrefIngredients()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,80 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Utensils";
+
+    <h2>Utensils</h2>
+    <br />
+    <form action="/Preferences/PrefCategories">
+        <input type="submit" value="Previous" />
+    </form>
+
+    <br />
+
+    <form action="/Preferences/PrefIngredients">
+       <input type="submit" value="Next" />
+    </form>
+
+
+    <br />
+    <p> Choose the utensils you have at home</p>
+}
+
+
+<ul role="listbox" tabindex="0" aria-label="email list">
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Spoon
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Knife
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Spatula
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Rolling pin
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Pan
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Bowl
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Baking Sheet
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Drainer
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Fridge
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Stove
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Oven
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Microwave
+    </li>
+</ul>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
