@@ -1,13 +1,45 @@
-﻿
-@{
-    ViewBag.Title = "PrefCategories";
+﻿@{
+    /**/
+
+    ViewBag.Title = "Categories";
+
+    <h2>Categories</h2>
+    <br />
+    <form action="http://google.com"> 
+        <input type="submit" value="Next" />
+    </form>
+    <br />
+    <p> Choose the dessert categories you like the most</p>
 }
 
-<h2>PrefCategories</h2>
-@using (Html.BeginForm("PrefCategories", "Preferences", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    <input type="checkbox" name="Cake" value="Bike"><br>
-}
+
+<ul role="listbox" tabindex="0" aria-label="email list">
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Cake
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Pie
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Pastry
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Cheesecake
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Ice Cream
+    </li>
+    <li tabindex="-1" role="option" aria-checked="false">
+        <input tabindex="-1" id="check1" class="o-checkbox" type="checkbox"><label for="check1"></label>
+        Cookies
+    </li>
+</ul>
+
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
