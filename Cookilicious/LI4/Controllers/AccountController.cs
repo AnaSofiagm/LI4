@@ -163,7 +163,11 @@ namespace LI4.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("PrefCategories", "Preferences");
+                    // nao abre preferencias, mas está a ir para lá. De lá é que vai para pagina principal que ainda tenho de fazer.
+
+               
+                  
                 }
                 AddErrors(result);
             }
@@ -367,7 +371,7 @@ namespace LI4.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                ApplicationUser user = NewMethod(model);
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
@@ -383,6 +387,11 @@ namespace LI4.Controllers
 
             ViewBag.ReturnUrl = returnUrl;
             return View(model);
+        }
+
+        private static ApplicationUser NewMethod(ExternalLoginConfirmationViewModel model)
+        {
+            return new ApplicationUser { UserName = model.Email, Email = model.Email };
         }
 
         //

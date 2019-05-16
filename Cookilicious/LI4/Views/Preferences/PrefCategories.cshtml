@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "PrefCategories";
+}
+
+<h2>PrefCategories</h2>
+@using (Html.BeginForm("PrefCategories", "Preferences", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <input type="checkbox" name="Cake" value="Bike"><br>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
