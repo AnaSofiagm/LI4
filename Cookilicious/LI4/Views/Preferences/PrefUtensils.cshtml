@@ -5,16 +5,19 @@
 
     <h2>Utensils</h2>
     <br />
-    <form action="/Preferences/PrefCategories">
-        <input type="submit" value="Previous" />
-    </form>
-
-    <br />
-
-    <form action="/Preferences/PrefIngredients">
-       <input type="submit" value="Next" />
-    </form>
-
+   
+    <div style="width:400px;">
+        <div style="float: left; width: 130px">
+            <form action="/Preferences/PrefCategories">
+                <input type="submit" value="Previous" />
+            </form>
+        </div>
+        <div style="float: right; width: 225px">
+            <form action="/Preferences/PrefIngredients">
+                <input type="submit" value="Next" />
+            </form>    
+        </div>
+    </div>
 
     <br />
     <p> Choose the utensils you have at home</p>

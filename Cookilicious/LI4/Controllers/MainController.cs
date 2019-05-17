@@ -13,5 +13,10 @@ namespace LI4.Controllers
         {
             return View();
         }
+
+        public ActionResult Recipe()
+        {
+            return View();
+        }
     }
 }
