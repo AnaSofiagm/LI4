@@ -2,94 +2,100 @@
 @{
     ViewBag.Title = "Recipe";
 }
-
-<h2>Recipe</h2>
-<br />
-<!--
-<body>
-    <?php
-    $link = mysql_connect("localhost", "root", "");
-    mysql_select_db("dvddb");
-    $sql = "SELECT dvdimage FROM dvd WHERE id=1";
-    $result = mysql_query("$sql");
-    mysql_close($link);
-
-    ?>
-    <img src="" width="175" height="200" />
-</body>
-    -->
-<table style="width:100%">
-    <tr>
-        <td>Preparation Time</td>
-        <td>Utensils</td>
-        <td>Ingredients</td>
-
-    </tr>
-    <tr>
-        <td>Difficulty</td>
-        <td>Steps</td>
-    </tr>
-    <tr>
-        <td>Nutricional Information</td>
-    </tr>
-</table>
-
-<br />
-<p>Rank it</p>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
-    <title>Star rating using pure CSS</title>
-</head>
-
-<body>
-    <div class="rate">
-        <input type="radio" id="star5" name="rate" value="5" />
-        <label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" />
-        <label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" />
-        <label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" />
-        <label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" />
-        <label for="star1" title="text">1 star</label>
+<div style="width:400px;">
+    <div style="float: left; width: 130px">
+        <form action="/Main/MultiRecipes">
+            <input type="submit" value="Previous" />
+        </form>
     </div>
-</body>
+    <br />
+    <h2>Recipe</h2>
+    <br />
+    <!--
+    <body>
+        <?php
+        $link = mysql_connect("localhost", "root", "");
+        mysql_select_db("dvddb");
+        $sql = "SELECT dvdimage FROM dvd WHERE id=1";
+        $result = mysql_query("$sql");
+        mysql_close($link);
+
+        ?>
+        <img src="" width="175" height="200" />
+    </body>
+        -->
+    <table style="width:100%">
+        <tr>
+            <td>Preparation Time</td>
+            <td>Utensils</td>
+            <td>Ingredients</td>
+
+        </tr>
+        <tr>
+            <td>Difficulty</td>
+            <td>Steps</td>
+        </tr>
+        <tr>
+            <td>Nutricional Information</td>
+        </tr>
+    </table>
+
+    <br />
+    <p>Rank it</p>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+        <title>Star rating using pure CSS</title>
+    </head>
+
+    <body>
+        <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+        </div>
+    </body>
 
 
-<br />
-<br />
-<p>Share Me</p>
-<div id="share-buttons">
-    <!-- Facebook -->
-    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-    </a>
+    <br />
+    <br />
+    <p>Share Me</p>
+    <div id="share-buttons">
+        <!-- Facebook -->
+        <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+        </a>
 
-    <!-- Pinterest -->
-    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-        <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
-    </a>
+        <!-- Pinterest -->
+        <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+            <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+        </a>
 
-    <!-- Tumblr-->
-    <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
-    </a>
+        <!-- Tumblr-->
+        <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+            <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+        </a>
 
-    <!-- Twitter -->
-    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-    </a>
-</div>
-<br />
-<p>Leave a comment</p>
-<form action="/html/tags/html_form_tag_action.cfm" method="post">
-    <div>
-        <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.0em;">
+        <!-- Twitter -->
+        <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+        </a>
+    </div>
+    <br />
+    <p>Leave a comment</p>
+    <form action="/html/tags/html_form_tag_action.cfm" method="post">
+        <div>
+            <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.0em;">
         </textarea>
-    </div>
-    <input type="submit" value="Submit">
-</form>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 
 

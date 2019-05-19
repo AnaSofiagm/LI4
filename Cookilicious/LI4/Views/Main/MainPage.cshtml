@@ -3,6 +3,7 @@
     ViewBag.Title = "MainPage";
 }
 
+<!-- ao fazer enter na pesquisa redirecionar para uma multiRecipes-->
 <div class="navbar">
     <a href="#cake">Cake</a>
     <a href="#cookies">Cookies</a>
@@ -24,7 +25,7 @@
 <form id="labnol" method="get" action="https://www.google.com/search">
     <div class="speech">
         <input type="text" name="q" id="transcript" placeholder="Speak" />
-        <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+        <button onclick="startDictation()">Voice</button>
     </div>
 </form>
 

@@ -283,6 +283,7 @@
     <Content Include="Views\Preferences\PrefIngredients.cshtml" />
     <Content Include="Views\Main\MainPage.cshtml" />
     <Content Include="Views\Main\Recipe.cshtml" />
+    <Content Include="Views\Main\MultiRecipes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

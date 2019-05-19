@@ -18,5 +18,10 @@ namespace LI4.Controllers
         {
             return View();
         }
+
+        public ActionResult MultiRecipes()
+        {
+            return View();
+        }
     }
 }
