@@ -2,100 +2,142 @@
 @{
     ViewBag.Title = "Recipe";
 }
-<div style="width:400px;">
-    <div style="float: left; width: 130px">
-        <form action="/Main/MultiRecipes">
-            <input type="submit" value="Previous" />
-        </form>
-    </div>
-    <br />
-    <h2>Recipe</h2>
-    <br />
-    <!--
-    <body>
-        <?php
-        $link = mysql_connect("localhost", "root", "");
-        mysql_select_db("dvddb");
-        $sql = "SELECT dvdimage FROM dvd WHERE id=1";
-        $result = mysql_query("$sql");
-        mysql_close($link);
 
-        ?>
-        <img src="" width="175" height="200" />
-    </body>
-        -->
-    <table style="width:100%">
-        <tr>
-            <td>Preparation Time</td>
-            <td>Utensils</td>
-            <td>Ingredients</td>
+<br />
+<h2>Recipe</h2>
+<br />
+<table style="width:100%">
+    <tr>
+        <td>
+            <b>Utensils</b><br />
+            1 mixing bowl<br />
+            1 baking sheet<br />
+            2 parchment paper sheets <br />
+            1 whisker<br />
+            1 colander strainer <br />
+            1 set of measuring spoons <br />
+            1 spatula <br />
+            1 knife <br />
+            microwave <br />
+            oven<br />
+        </td>
 
-        </tr>
-        <tr>
-            <td>Difficulty</td>
-            <td>Steps</td>
-        </tr>
-        <tr>
-            <td>Nutricional Information</td>
-        </tr>
-    </table>
+        <td>
+            <b>Ingredients</b> <br />
+            <b>for 16 brownies</b>
+            <br />
+            1 cup  unsalted butter, 2 sticks (230 g)<br />
+            1 ½ cups  semi-sweet chocolate chips, or dark chocolate chips, divided (260 g)<br />
+            1 ½ cups  granulated sugar (300 g)<br />
+            ¾ cup  brown sugar (165 g)<br />
+            1 tablespoon  vanilla extract<br />
+            1 teaspoon  salt<br />
+            3 large eggs<br />
+            1 ¼ cups  all-purpose flour (155 g)<br />
+            ⅓ cup  dark cocoa powder (40 g)<br />
+            nonstick cooking spray, for greasing<br />
+        </td>
 
-    <br />
-    <p>Rank it</p>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
-        <title>Star rating using pure CSS</title>
-    </head>
-
-    <body>
-        <div class="rate">
-            <input type="radio" id="star5" name="rate" value="5" />
-            <label for="star5" title="text">5 stars</label>
-            <input type="radio" id="star4" name="rate" value="4" />
-            <label for="star4" title="text">4 stars</label>
-            <input type="radio" id="star3" name="rate" value="3" />
-            <label for="star3" title="text">3 stars</label>
-            <input type="radio" id="star2" name="rate" value="2" />
-            <label for="star2" title="text">2 stars</label>
-            <input type="radio" id="star1" name="rate" value="1" />
-            <label for="star1" title="text">1 star</label>
-        </div>
-    </body>
-
-
-    <br />
-    <br />
-    <p>Share Me</p>
-    <div id="share-buttons">
-        <!-- Facebook -->
-        <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
-            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-        </a>
-
-        <!-- Pinterest -->
-        <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-            <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
-        </a>
-
-        <!-- Tumblr-->
-        <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-            <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
-        </a>
-
-        <!-- Twitter -->
-        <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-        </a>
-    </div>
-    <br />
-    <p>Leave a comment</p>
-    <form action="/html/tags/html_form_tag_action.cfm" method="post">
-        <div>
-            <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.0em;">
-        </textarea>
-        </div>
-        <input type="submit" value="Submit">
+    </tr>
+</table>
+<br />
+<p>
+    <b>Steps</b> <br />
+    <b>1</b>Preheat the oven to 350˚F (180˚C). <br />
+    <form action="">
+        <!--função que conta o tempo-->
+        <input type="submit" value="Start" />
     </form>
+    <form action=""> <!--passa para o passo seguinte-->
+        <input type="submit" value="Next" />
+    </form>
+    <b>2</b>Add the butter and 1 cup (175 g) of chocolate chips to a large microwave-safe bowl. Microwave for 1½ minutes, then let sit for 3 minutes before whisking together. <br />
+    <b>3</b>Add the granulated and brown sugars, vanilla, and salt. Whisk to combine.<br />
+    <b>4</b>Whisk in the eggs until fully combined.<br />
+    <b>5</b>Sift the flour and cocoa powder into the bowl and fold in with a spatula. Add the remaining chocolate chips and fold to incorporate.<br />
+    <b>6</b>Line a 9-inch (23-cm) square baking pan with parchment paper and grease with nonstick spray. Spread the batter evenly in the pan.<br />
+    <b>7</b>Bake for 35-40 minutes, until a toothpick inserted in the center comes out with a few moist crumbs attached.<br />
+    <b>8</b>Let cool completely before cutting.<br />
+    <b>9</b>Enjoy!<br />
+</p>
+<br />
+<table style="width:100%">
+    <tr>
+        <td><p><b>Preparation Time:</b> 20 minutes</p></td>
+        <td><b>Difficulty</b></td>
+        <td>
+            <b>Nutricional Information</b>
+            <p>
+                <b>Calories</b> 298
+                <b>Fat</b> 19g
+                <b>Carbs</b> 28g
+                <b>Fiber</b> 1g
+                <b>Sugar</b> 19g
+                <b>Protein</b> 3g
+                <br />
+                Estimated values based on one serving size
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br />
+            <p><b>Rank it</b></p>
+            <head>
+                <meta charset="UTF-8">
+                <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+                <title>Star rating using pure CSS</title>
+            </head>
 
+            <body>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </body>
+        </td>
+        <td>
+            <p><b>Share Me</b></p>
+            <div id="share-buttons">
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+
+                <!-- Pinterest -->
+                <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                    <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+                </a>
+
+                <!-- Tumblr-->
+                <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+                </a>
+
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
+            </div>
+        </td>
+        <td>
+            <p><b>Leave a comment</b></p>
+            <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                <div>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.0em;">
+        </textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </td>
+    </tr>
+</table>
 

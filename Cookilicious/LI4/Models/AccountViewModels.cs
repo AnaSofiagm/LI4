@@ -8,6 +8,7 @@ namespace LI4.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+        public string Name { get; set; }
     }
 
     public class ExternalLoginListViewModel
@@ -64,6 +65,10 @@ namespace LI4.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "Name")]
+        public string Name { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
