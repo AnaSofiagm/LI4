@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{143EBFD9-E8B8-4FB1-9B3D-C5697A5573EF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LI4/src/Cooklicious.cs">
+    <Files>
+      <File FileName="LI4/src/Receita.cs" Line="80" Column="14" />
+      <File FileName="LI4/src/Cooklicious.cs" Line="43" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LI4" expanded="True">
+            <Node name="LI4" expanded="True">
+              <Node name="src" expanded="True">
+                <Node name="Cooklicious.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LI4 PreferredExecutionTarget="env" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
