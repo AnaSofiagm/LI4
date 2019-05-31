@@ -70,7 +70,6 @@ namespace Cooklicous {
 			this.pref_ingredientes = pref_ingredientes;
 		}
 
-		private UnnamedClass1 ;
 		private Comentario[] comentarios;
 		private Receita[] receitas;
 

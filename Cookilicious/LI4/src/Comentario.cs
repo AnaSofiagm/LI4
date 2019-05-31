@@ -38,7 +38,6 @@ namespace Cooklicous {
 			this.data = data;
 		}
 
-		private UnnamedClass1 -comentarios2;
 
 
 	}

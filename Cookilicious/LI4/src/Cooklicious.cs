@@ -47,13 +47,13 @@ namespace Cooklicous {
             return _rec.GetPassos();
         }
 
-		public Passo ProximoPasso() {
+		/*public Passo ProximoPasso() {
             if (passo < rec.Num_passos())
                 passo += 1;
 
             VerPasso();
 		}
-
+    */
 		public void VerPasso() {
 			throw new System.Exception("Not implemented");
 		}
