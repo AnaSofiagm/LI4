@@ -311,12 +311,10 @@
     <Content Include="Views\Main\Recipe.cshtml" />
     <Content Include="Views\Main\MultiRecipes.cshtml" />
     <Content Include="Views\Calendar\Calendar.cshtml" />
+    <Content Include="Views\Main\Step.cshtml" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="src\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />

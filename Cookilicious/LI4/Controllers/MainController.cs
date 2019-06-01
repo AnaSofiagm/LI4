@@ -23,5 +23,10 @@ namespace LI4.Controllers
         {
             return View();
         }
+
+        public ActionResult Step()
+        {
+            return View();
+        }
     }
 }
