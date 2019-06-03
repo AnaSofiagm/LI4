@@ -14,7 +14,12 @@ namespace Cooklicous {
         {
             string connetionString = null;
             string sql = null;
-            connetionString = ConfigurationManager.ConnectionStrings["Database1"].ConnectionString;
+            //connetionString = ConfigurationManager.ConnectionStrings["Database1"].ConnectionString;
+            connetionString = @"Data Source=.\SQLEXPRESS;
+                          AttachDbFilename=..\App_Start\Database1.mdf;
+                          Integrated Security=True;
+                          Connect Timeout=30;
+                          User Instance=True";
             using (SqlConnection cnn = new SqlConnection(connetionString))
             {
                 sql = @"insert into dbo.User (idUser, Username, Email, Password)
