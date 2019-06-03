@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
+
 namespace Cooklicous {
 	public class Cooklicious {
-		private int passo;
+	    private int passo;
 		private Utilizador user;
 		private Receita rec;
 		private Planeador plan;
@@ -12,6 +14,7 @@ namespace Cooklicous {
         private DAOUtilizador dao_utilizador;
         private DAOPlaneador dao_planeador;
         private DAOCategoria dao_categoria;
+        private List<Receita> pesquisa;
 
         public void RegistarUtilizador(ref string nomeUser, ref string password, ref string email) {
             Utilizador _user = new Utilizador(nomeUser, email, password);
@@ -23,26 +26,26 @@ namespace Cooklicous {
 			throw new System.Exception("Not implemented");
 		}
 
-		/*public Receita[] ConsultarReceitasUtilizador(ref int idUser) {
-            Utilizador _user = dao_utilizador.Get(ref idUser);
+		public Receita[] ConsultarReceitasUtilizador(ref int idUser) {
+            Utilizador _user = dao_utilizador.Get(ref idUser)[0];
 
             return _user.GetReceitas();
 		}
 
 		public Ingrediente[] ConsultarIngredientesReceita(ref int idReceita) {
-            Receita _rec = dao_receita.Get(ref idReceita);
+            Receita _rec = dao_receita.Get(ref idReceita)[0];
 
             return _rec.GetIngredientes();
 		}
 
-		public Utensilio[] ConsultarUtensiliosReceita(ref int idReceita) {
-            Receita _rec = dao_receita.Get(ref idReceita);
+        public Utensilio[] ConsultarUtensiliosReceita(ref int idReceita) {
+            Receita _rec = dao_receita.Get(ref idReceita)[0];
 
             return _rec.GetUtensilios();
         }
 
 		public Passo[] ConsultarPassosReceita(ref int idReceita) {
-            Receita _rec = dao_receita.Get(ref idReceita);
+            Receita _rec = dao_receita.Get(ref idReceita)[0];
 
             return _rec.GetPassos();
         }
@@ -53,7 +56,7 @@ namespace Cooklicous {
 
             VerPasso();
 		}
-		
+
 		public void VerPasso() {
 			throw new System.Exception("Not implemented");
 		}
@@ -66,14 +69,30 @@ namespace Cooklicous {
 		}
 
 		public Planeador CriarPlaneador() {
-			throw new System.Exception("Not implemented");
+            return new Planeador();
 		}
 
-		public Receita[] PesquisarReceita(ref string nome) {
-			throw new System.Exception("Not implemented");
+		public List<Receita> PesquisarReceita(ref string nome) {
+            this.pesquisa = dao_receita.GetByName(ref nome);
+            return SortSearchByName();
 		}
 
-		public void ConsultarUtilizador(ref Utilizador user) {
+        public List<Receita> SortSearchByName(){
+            this.pesquisa.Sort(new Comparison<Receita>((x, y) => String.Compare(x.GetNome(), y.GetNome())));
+            return this.pesquisa;
+        }
+
+        public List<Receita> SortSearchByRating(){
+            this.pesquisa.Sort(new Comparison<Receita>((x, y) => x.GetAvaliacao().CompareTo(y.GetAvaliacao())));
+            return this.pesquisa;
+        }
+
+        public List<Receita> SortSearchByCategory(){
+            this.pesquisa.Sort(new Comparison<Receita>((x, y) => String.Compare(x.GetCategoria().GetNome(), y.GetCategoria().GetNome())));
+            return this.pesquisa;
+        }
+
+        public void ConsultarUtilizador(ref Utilizador user) {
 			throw new System.Exception("Not implemented");
 		}
 

@@ -52,7 +52,14 @@ namespace Cooklicous {
 
         }
 
+        public List<Receita> GetByName(ref string name){
+            string rec_name = name;
+            string sqlCode = @"select * from dbo.Receita where idReceita LIKE %@rec_name%";
 
-	}
+            return DbAccess.LoadData<Receita>(sqlCode);
+        }
+
+
+    }
 
 }
