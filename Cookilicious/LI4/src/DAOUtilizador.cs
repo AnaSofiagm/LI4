@@ -14,7 +14,7 @@ namespace Cooklicous {
         {
             string connetionString = null;
             string sql = null;
-            connetionString = "\"Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog='D:\\UNIPROJECTS\\LI4 V2.0\\LI4\\COOKILICIOUS\\LI4\\APP_DATA\\DATABASE1.MDF';Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False\"";
+            connetionString = ConfigurationManager.ConnectionStrings["Database1"].ConnectionString;
             using (SqlConnection cnn = new SqlConnection(connetionString))
             {
                 sql = @"insert into dbo.User (idUser, Username, Email, Password)
@@ -36,7 +36,7 @@ namespace Cooklicous {
         {
             string connetionString = null;
             string sql = null;
-            connetionString = "\"Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog='D:\\UNIPROJECTS\\LI4 V2.0\\LI4\\COOKILICIOUS\\LI4\\APP_DATA\\DATABASE1.MDF';Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False\"";
+            connetionString = ConfigurationManager.ConnectionStrings["Database1"].ConnectionString;
             using (SqlConnection cnn = new SqlConnection(connetionString))
             {
                 sql = "@select * from dbo.User where idUser = @id";
