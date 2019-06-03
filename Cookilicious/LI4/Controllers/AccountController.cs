@@ -153,6 +153,11 @@ namespace LI4.Controllers
         {
             if (ModelState.IsValid)
             {
+                Utilizador usertest = new Utilizador("joao", "joao@gmail.com", "password");
+                DAOUtilizador dao = new DAOUtilizador();
+                dao.Insert(ref usertest);
+
+
                 var user = new ApplicationUser { UserName = model.Name, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

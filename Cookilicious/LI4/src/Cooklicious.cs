@@ -23,7 +23,7 @@ namespace Cooklicous {
 			throw new System.Exception("Not implemented");
 		}
 
-		public Receita[] ConsultarReceitasUtilizador(ref int idUser) {
+		/*public Receita[] ConsultarReceitasUtilizador(ref int idUser) {
             Utilizador _user = dao_utilizador.Get(ref idUser);
 
             return _user.GetReceitas();
@@ -46,7 +46,7 @@ namespace Cooklicous {
 
             return _rec.GetPassos();
         }
-
+        */
 		public void ProximoPasso() {
             if (passo < rec.Num_passos())
                 passo += 1;

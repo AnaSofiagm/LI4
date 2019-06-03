@@ -11,7 +11,7 @@ namespace LI4.DataAccess
 {
     public static class DbAccess
     {
-        public static string GetConnectionString(string connectName = "DefaultConnection")
+        public static string GetConnectionString(string connectName = "Database1")
         {
             return ConfigurationManager.ConnectionStrings[connectName].ConnectionString;
         }
