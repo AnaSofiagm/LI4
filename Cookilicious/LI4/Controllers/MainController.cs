@@ -28,5 +28,13 @@ namespace LI4.Controllers
         {
             return View();
         }
+        public ActionResult AfterFinalStep()
+        {
+            return View();
+        }
+        public ActionResult Help()
+        {
+            return View();
+        }
     }
 }

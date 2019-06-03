@@ -1,0 +1,38 @@
+﻿@{Layout = null;}
+
+@{
+    ViewBag.Title = "AfterFinalStep";
+}
+<center>
+    <br />
+    <p><b>Did you successfully complete the recipe?</b></p>
+    <br />
+    <div style="width:600px;">
+        <div style="float: left; width: 130px">
+                <input type="button" value="Yes" onclick="yes()">
+        </div>
+        <div style="float: right; width: 225px">
+                <input type="button"  value="No" onclick="no()">
+        </div>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        function yes() {
+            document.getElementById("demo").innerHTML = "Congratulations! I hope you enjoy your dessert";
+        }
+        function no() {
+            document.getElementById("demo").innerHTML = "Oh no :( We hope we did everything to help you. Don't give up, see you next time!";
+        }
+    </script>
+</center>
+
+
+
+
+
+
+
+
+
