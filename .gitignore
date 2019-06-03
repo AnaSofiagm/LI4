@@ -1,7 +1,7 @@
 ###################
 # compiled source #
 ###################
-**/.vs
+Cookilicious/.vs/*
 *.com
 *.class
 *.dll

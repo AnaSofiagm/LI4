@@ -68,9 +68,11 @@ namespace Cooklicous {
 		public Planeador CriarPlaneador() {
 			throw new System.Exception("Not implemented");
 		}
+
 		public Receita[] PesquisarReceita(ref string nome) {
 			throw new System.Exception("Not implemented");
 		}
+
 		public void ConsultarUtilizador(ref Utilizador user) {
 			throw new System.Exception("Not implemented");
 		}
