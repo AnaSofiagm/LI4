@@ -6,6 +6,7 @@ namespace Cooklicous {
 		private int avaliacao;
 		private int dificuldade;
 		private string info;
+        private string imagem;
 		private int tempo;
         private Categoria categoria;
         private Ingrediente[] ingredientes;
@@ -29,7 +30,13 @@ namespace Cooklicous {
 		public string GetNome() {
 			return this.nome;
 		}
-		public void SetNome(ref string nome) {
+        public void SetImagem(ref string img){
+            this.imagem = img;
+        }
+        public string GeImagem(){
+            return this.imagem;
+        }
+        public void SetNome(ref string nome) {
 			this.nome = nome;
 		}
 		public int GetAvaliacao() {
