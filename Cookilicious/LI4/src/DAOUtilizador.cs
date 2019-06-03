@@ -1,5 +1,7 @@
 using LI4.DataAccess;
 using System;
+using System.Collections.Generic;
+
 namespace Cooklicous {
 
     public class DAOUtilizador {
@@ -16,14 +18,26 @@ namespace Cooklicous {
             return DbAccess.SaveData(sqlCode, user);
         }
 
-		public void Update(ref Utilizador user) {
+
+
+        public void Update(ref Utilizador user) {
 			throw new System.Exception("Not implemented");
 		}
-		public void Delete(ref int id) {
+
+
+
+        public void Delete(ref int id) {
 			throw new System.Exception("Not implemented");
 		}
-		public Utilizador Get(ref int id) {
-			throw new System.Exception("Not implemented");
+
+
+
+        public List<Utilizador> Get(ref int id) {
+            int getId = id;
+            string sqlCode = @"select * from dbo.User
+                               where idUser = @getId;";
+
+            return DbAccess.LoadData<Utilizador>(sqlCode);
 		}
 
 

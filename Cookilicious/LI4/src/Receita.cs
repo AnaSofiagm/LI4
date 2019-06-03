@@ -4,7 +4,7 @@ namespace Cooklicous {
 		private int id;
 		private string nome;
 		private int avaliacao;
-		private string dificuldade;
+		private int dificuldade;
 		private string info;
 		private int tempo;
         private Categoria categoria;
@@ -13,7 +13,7 @@ namespace Cooklicous {
         private Utensilio[] utensilios;
         private Comentario[] comentarios;
 
-        public Receita(string nome, string dificuldade, string info, Categoria categoria){
+        public Receita(string nome, int dificuldade, string info, Categoria categoria){
             this.nome = nome;
             this.dificuldade = dificuldade;
             this.info = info;
@@ -38,10 +38,10 @@ namespace Cooklicous {
 		public void SetAvaliacao(ref int avaliacao) {
 			this.avaliacao = avaliacao;
 		}
-		public string GetDificuldade() {
+		public int GetDificuldade() {
 			return this.dificuldade;
 		}
-		public void SetDificuldade(ref string dificuldade) {
+		public void SetDificuldade(ref int dificuldade) {
 			this.dificuldade = dificuldade;
 		}
 		public string GetInfo() {
