@@ -12,36 +12,33 @@ namespace Cooklicous {
             string email = user.GetEmail();
             string password = user.GetPassword();
             
-            string sqlCode = @"insert into dbo.User (idUser, username, email, password)
+            string sqlCode = @"insert into dbo.User (idUser, Username, Email, Password)
                                values(@id, @username, @email, @password);";
 
             int ret = DbAccess.SaveData(sqlCode, user);
 
             if (ret == 1){
 
-                string ut_sql_code = @"insert into dbo.User_has_Utensilios (User_idUser, Utensilios_idUtensilios)
+                string ut_sql_code = @"insert into dbo.User_has_Utensilios (FK_idUser_UserUtensilios, FK_idUtensilio_UserUtensilios)
                                      values(@id, @ut_id);";
 
-                foreach (Utensilio ut in user.GetPref_utensilios())
-                {
+                foreach (Utensilio ut in user.GetPref_utensilios()){
                     int ut_id = ut.GetId();
 
                     DbAccess.SaveData(ut_sql_code, user);
                 }
 
-                string it_sql_code = @"insert into dbo.User_has_Ingredientes (User_idUser, Ingrediente_idIngrediente)
+                string it_sql_code = @"insert into dbo.User_has_Ingredientes (FK_idUser_UserIngrediente, FK_idIngrediente_UserIngrediente)
                                      values(@id, @it_id);";
-                foreach (Ingrediente it in user.GetPref_ingredientes())
-                {
+                foreach (Ingrediente it in user.GetPref_ingredientes()){
                     int it_id = it.GetId();
 
                     DbAccess.SaveData(it_sql_code, user);
                 }
 
-                string cat_sql_code = @"insert into dbo.User_has_Ingredientes (User_idUser, Categoria_idCategoria)
+                string cat_sql_code = @"insert into dbo.User_has_Ingredientes (FK_idUser_UserCategoria, FK_idCategoria_UserCategoria)
                                      values(@id, @cat_id);";
-                foreach (Categoria cat in user.GetPref_categorias())
-                {
+                foreach (Categoria cat in user.GetPref_categorias()){
                     int cat_id = cat.GetId();
 
                     DbAccess.SaveData(cat_sql_code, user);

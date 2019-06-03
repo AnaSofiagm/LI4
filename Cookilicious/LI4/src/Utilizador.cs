@@ -8,6 +8,8 @@ namespace Cooklicous {
 		private Categoria[] pref_categorias;
 		private Utensilio[] pref_utensilios;
 		private Ingrediente[] pref_ingredientes;
+         private Comentario[] comentarios;
+         private Receita[] receitas;
 
         public Utilizador(string nome, string email, string password){
             this.nome = nome;
@@ -69,10 +71,6 @@ namespace Cooklicous {
 		public void SetPref_ingredientes(ref Ingrediente[] pref_ingredientes) {
 			this.pref_ingredientes = pref_ingredientes;
 		}
-
-		private Comentario[] comentarios;
-		private Receita[] receitas;
-
 
 	}
 
