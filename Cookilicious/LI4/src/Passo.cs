@@ -4,12 +4,13 @@ namespace Cooklicous {
 		private int id;
 		private string descricao;
 		private int duracao;
-		private string href;
+		private string imagemHref;
+        private string videoHref;
 
         public Passo(string descricao, int duracao, string href){
             this.descricao = descricao;
             this.duracao = duracao;
-            this.href = href;
+            this.imagemHref = href;
         }
 
         public int GetId() {
@@ -36,14 +37,21 @@ namespace Cooklicous {
 		public void SetAttribute(ref object attribute) {
 			throw new System.Exception("Not implemented");
 		}
-		public string GetHref() {
-			return this.href;
+		public string GetImagemHref() {
+			return this.imagemHref;
 		}
-		public void SetHref(ref string href) {
-			this.href = href;
+		public void SetImagemHref(ref string href) {
+			this.imagemHref = href;
 		}
+        public string GetVideoHref()
+        {
+            return this.videoHref;
+        }
+        public void SetVideoHref(ref string href)
+        {
+            this.videoHref = href;
+        }
 
-
-	}
+    }
 
 }
