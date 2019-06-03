@@ -17,6 +17,14 @@ namespace Cooklicous {
             this.password = password;
         }
 
+        public Utilizador(int id, string nome, string email, string password)
+        {
+            this.nome = nome;
+            this.email = email;
+            this.password = password;
+            this.id = id;
+        }
+
         public string GetNome() {
 			return this.nome;
 		}

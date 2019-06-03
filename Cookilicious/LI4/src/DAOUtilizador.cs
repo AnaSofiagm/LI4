@@ -31,6 +31,34 @@ namespace Cooklicous {
             }
         }
 
+
+        public Utilizador GetTeste(ref int id)
+        {
+            string connetionString = null;
+            string sql = null;
+            connetionString = "\"Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog='D:\\UNIPROJECTS\\LI4 V2.0\\LI4\\COOKILICIOUS\\LI4\\APP_DATA\\DATABASE1.MDF';Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False\"";
+            using (SqlConnection cnn = new SqlConnection(connetionString))
+            {
+                sql = "@select * from dbo.User where idUser = @id";
+                cnn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, cnn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    SqlDataReader dr = cmd.ExecuteReader();
+
+                    string nome = dr["Username"].ToString();
+                    string email = dr["Email"].ToString();
+                    string password = dr["Password"].ToString();
+                    int idu = Convert.ToInt32(dr["idUser"]);
+
+                    Utilizador user = new Utilizador(id, nome, email, password);
+
+                    return user;
+                }
+            }
+        }
+
         public int Insert(ref Utilizador user) {
             int id = user.GetId();
             string username = user.GetNome();
