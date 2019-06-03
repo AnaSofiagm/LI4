@@ -1,10 +1,35 @@
 using LI4.DataAccess;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+
 
 namespace Cooklicous {
 
     public class DAOUtilizador {
+
+        public void Teste(ref Utilizador user)
+        {
+            string connetionString = null;
+            string sql = null;
+            connetionString = "\"Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog='D:\\UNIPROJECTS\\LI4 V2.0\\LI4\\COOKILICIOUS\\LI4\\APP_DATA\\DATABASE1.MDF';Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False\"";
+            using (SqlConnection cnn = new SqlConnection(connetionString))
+            {
+                sql = @"insert into dbo.User (idUser, Username, Email, Password)
+                               values(@id, @username, @email, @password);";
+                cnn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, cnn))
+                {
+                    cmd.Parameters.AddWithValue("@id", user.GetId());
+                    cmd.Parameters.AddWithValue("@username", user.GetNome());
+                    cmd.Parameters.AddWithValue("@email", user.GetEmail());
+                    cmd.Parameters.AddWithValue("@password", user.GetPassword());
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
 
         public int Insert(ref Utilizador user) {
             int id = user.GetId();
